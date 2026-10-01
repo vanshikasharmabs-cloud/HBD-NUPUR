@@ -1,0 +1,1423 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Nupur 🎂❤️</title>
+
+<style>
+
+/* =========================
+   BASIC STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #fff0f6, #fff8e7, #f2f0ff);
+    color: #4b2942;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 75px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #ffd8ea,
+            #fff3f8,
+            #f7f2ff
+        );
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 850px;
+    padding: 20px;
+}
+
+.badge {
+    display: inline-block;
+
+    background: #ffffffaa;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(3rem, 9vw, 6.5rem);
+
+    color: #d94d8b;
+
+    text-shadow:
+        3px 4px 0 white;
+}
+
+.hero p {
+    font-size: 1.25rem;
+
+    margin: 20px 0 30px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 14px 28px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #d94d8b;
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px #d94d8b44;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform:
+        translateY(-3px)
+        scale(1.03);
+}
+
+.secondary {
+    background: white;
+
+    color: #d94d8b;
+
+    border: 2px solid #d94d8b;
+}
+
+
+/* =========================
+   BALLOONS
+========================= */
+
+.balloon {
+    position: absolute;
+
+    font-size: 4rem;
+
+    animation:
+        float 5s ease-in-out infinite;
+}
+
+.b1 {
+    left: 7%;
+    top: 15%;
+}
+
+.b2 {
+    right: 8%;
+    top: 20%;
+
+    animation-delay: 1s;
+}
+
+.b3 {
+    left: 12%;
+    bottom: 15%;
+
+    animation-delay: 2s;
+}
+
+.b4 {
+    right: 12%;
+    bottom: 12%;
+
+    animation-delay: 1.5s;
+}
+
+@keyframes float {
+
+    50% {
+        transform:
+            translateY(-25px)
+            rotate(5deg);
+    }
+
+}
+
+
+/* =========================
+   TITLES
+========================= */
+
+.title {
+    text-align: center;
+
+    font-size: 2.4rem;
+
+    color: #c83f7d;
+
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    color: #79566d;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+
+    background: #ffffffd9;
+
+    backdrop-filter: blur(8px);
+
+    border-radius: 28px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 12px 35px #7a4d6d1c;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CAKE
+========================= */
+
+.cake-wrap {
+    text-align: center;
+}
+
+.cake {
+
+    width: 220px;
+
+    height: 150px;
+
+    margin: 40px auto 20px;
+
+    position: relative;
+}
+
+.layer {
+
+    position: absolute;
+
+    left: 10px;
+
+    width: 200px;
+
+    height: 50px;
+
+    border-radius: 12px;
+
+    border: 4px solid white;
+
+    transition: 0.5s;
+}
+
+.l1 {
+
+    bottom: 0;
+
+    background: #f4a3c7;
+}
+
+.l2 {
+
+    bottom: 40px;
+
+    width: 175px;
+
+    left: 22px;
+
+    background: #ffd0df;
+}
+
+.l3 {
+
+    bottom: 80px;
+
+    width: 150px;
+
+    left: 35px;
+
+    background: #fff0a9;
+}
+
+
+/* CANDLE */
+
+.candle {
+
+    position: absolute;
+
+    width: 12px;
+
+    height: 48px;
+
+    background: #8fc8ff;
+
+    top: -45px;
+
+    left: 104px;
+
+    border-radius: 5px;
+}
+
+.flame {
+
+    position: absolute;
+
+    top: -30px;
+
+    left: -5px;
+
+    font-size: 27px;
+
+    animation:
+        flicker 0.6s
+        infinite alternate;
+}
+
+@keyframes flicker {
+
+    to {
+        transform:
+            scale(1.15)
+            rotate(4deg);
+    }
+
+}
+
+
+/* CUT CAKE ANIMATION */
+
+.cake.cut .flame {
+    display: none;
+}
+
+.cake.cut .l1 {
+
+    transform:
+        rotate(-2deg)
+        translateX(-15px);
+}
+
+.cake.cut .l3 {
+
+    transform:
+        rotate(3deg)
+        translateX(15px);
+}
+
+.message {
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PHOTO GALLERY
+========================= */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(190px, 1fr)
+        );
+
+    gap: 18px;
+}
+
+.photo {
+
+    height: 230px;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd8e8,
+            #e5ddff
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: #8a5b76;
+
+    font-weight: bold;
+
+    border: 5px solid white;
+
+    box-shadow:
+        0 8px 22px #00000012;
+
+    cursor: pointer;
+}
+
+.photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   MESSAGE CARDS
+========================= */
+
+.note-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(230px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+.note {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 22px #0000000d;
+
+    transform: rotate(-1deg);
+}
+
+.note:nth-child(even) {
+
+    transform:
+        rotate(1deg);
+}
+
+.note h3 {
+
+    color: #d94d8b;
+
+    margin-bottom: 10px;
+}
+
+.note p {
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+
+    border-left:
+        4px solid #e8a0c2;
+
+    padding-left: 25px;
+}
+
+.timeline div {
+
+    margin: 20px 0;
+
+    line-height: 1.7;
+}
+
+.timeline strong {
+
+    color: #c83f7d;
+}
+
+
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+.final {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d94d8b,
+            #8d63c7
+        );
+
+    color: white;
+
+    max-width: none;
+}
+
+.final h2 {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+#secret {
+
+    margin-top: 25px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HEART ANIMATION
+========================= */
+
+.heart {
+
+    position: fixed;
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    animation:
+        rise 2.5s linear forwards;
+}
+
+@keyframes rise {
+
+    to {
+
+        transform:
+            translateY(-180px)
+            rotate(20deg);
+
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================
+   HIDDEN ELEMENT
+========================= */
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #79566d;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 600px) {
+
+    section {
+
+        padding:
+            55px 15px;
+    }
+
+    .card {
+
+        padding: 22px;
+    }
+
+    .photo {
+
+        height: 210px;
+    }
+
+    .balloon {
+
+        font-size: 2.5rem;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+    <div class="balloon b1">
+        🎈
+    </div>
+
+    <div class="balloon b2">
+        🎈
+    </div>
+
+    <div class="balloon b3">
+        🎈
+    </div>
+
+    <div class="balloon b4">
+        🎈
+    </div>
+
+
+    <div class="hero-content">
+
+        <div class="badge">
+            ✨ A little surprise made with lots of love ✨
+        </div>
+
+
+        <h1>
+            Happy Birthday Nupur! 🎂❤️
+        </h1>
+
+
+        <p>
+            Today is all about celebrating
+            the most wonderful person ever. 💕
+        </p>
+
+
+        <button onclick="startSurprise()">
+            Open Your Surprise 🎁
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main id="surprise" class="hidden">
+
+
+<!-- =========================
+     CAKE SECTION
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        🎂 Time to Cut the Cake!
+    </h2>
+
+
+    <p class="subtitle">
+        Make a wish and cut the cake! ✨
+    </p>
+
+
+    <div class="card cake-wrap">
+
+
+        <div class="cake" id="cake">
+
+            <div class="candle">
+
+                <span class="flame">
+                    🔥
+                </span>
+
+            </div>
+
+
+            <div class="layer l3"></div>
+
+            <div class="layer l2"></div>
+
+            <div class="layer l1"></div>
+
+        </div>
+
+
+        <button onclick="cutCake()">
+
+            Cut the Cake 🍰
+
+        </button>
+
+
+        <p
+            id="cakeText"
+            class="message"
+            style="margin-top:20px"
+        >
+
+            Make a wish first... ✨
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PHOTO SECTION
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        📸 Beautiful Memories
+    </h2>
+
+
+    <p class="subtitle">
+        Kyunki photos click hi nhi krate hum...
+    </p>
+
+
+    <div class="gallery">
+
+
+        <!-- PHOTO 1 -->
+
+        <label class="photo">
+
+            <input
+                hidden
+                type="file"
+                accept="image/*"
+                onchange="loadPhoto(this,'p1')"
+            >
+
+            <span id="p1">
+
+                📷
+                <br>
+
+                Photo 1
+
+                <br>
+
+                <small>
+                    Click to add
+                </small>
+
+            </span>
+
+        </label>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <label class="photo">
+
+            <input
+                hidden
+                type="file"
+                accept="image/*"
+                onchange="loadPhoto(this,'p2')"
+            >
+
+            <span id="p2">
+
+                📷
+                <br>
+
+                Photo 2
+
+                <br>
+
+                <small>
+                    Click to add
+                </small>
+
+            </span>
+
+        </label>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <label class="photo">
+
+            <input
+                hidden
+                type="file"
+                accept="image/*"
+                onchange="loadPhoto(this,'p3')"
+            >
+
+            <span id="p3">
+
+                📷
+                <br>
+
+                Photo 3
+
+                <br>
+
+                <small>
+                    Click to add
+                </small>
+
+            </span>
+
+        </label>
+
+
+
+        <!-- PHOTO 4 -->
+
+        <label class="photo">
+
+            <input
+                hidden
+                type="file"
+                accept="image/*"
+                onchange="loadPhoto(this,'p4')"
+            >
+
+            <span id="p4">
+
+                📷
+                <br>
+
+                Photo 4
+
+                <br>
+
+                <small>
+                    Click to add
+                </small>
+
+            </span>
+
+        </label>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     LOVELY MESSAGES
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        💌 A Few Words For You
+    </h2>
+
+
+    <p class="subtitle">
+        Because one birthday message is never enough.
+    </p>
+
+
+    <div class="note-grid">
+
+
+        <div class="note">
+
+            <h3>
+                🌷 My Safe Place
+            </h3>
+
+            <p>
+
+                Thank you for always being
+                someone I can laugh with,
+                talk to and count on.
+
+                Life feels better
+                with you around. ❤️
+
+            </p>
+
+        </div>
+
+
+
+        <div class="note">
+
+            <h3>
+                ✨ My Inspiration
+            </h3>
+
+            <p>
+
+                You inspire me more
+                than you know.
+
+                Keep smiling,
+                keep dreaming,
+                and keep being
+                wonderfully you. 💕
+
+            </p>
+
+        </div>
+
+
+
+        <div class="note">
+
+            <h3>
+                🫶 Forever Special
+            </h3>
+
+            <p>
+
+                No matter how much
+                life changes,
+
+                you will always be
+                one of the most
+                special people
+                in my life. ❤️
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     TIMELINE
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        🕰️ Our Little Timeline
+    </h2>
+
+
+    <div class="card timeline">
+
+
+        <div>
+
+            <strong>
+                Then 🌸
+            </strong>
+
+            <br>
+
+            All the silly moments,
+            little fights,
+            and endless laughs.
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                Now 💕
+            </strong>
+
+            <br>
+
+            More memories,
+            more stories,
+            and still
+            the same special bond.
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                Always ♾️
+            </strong>
+
+            <br>
+
+            Whatever life brings,
+            there will always be
+            a special place
+            for you in my heart.
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<section>
+
+    <h2 class="title">
+        🎵 MY KINDERJOY
+
+    </h2>
+
+
+    <div
+        class="card"
+        style="text-align:center"
+    >
+
+        <p>
+            A song especially for you 🎶
+        </p>
+
+
+        <input
+            id="music"
+            type="file"
+            accept="audio/*"
+            style="margin-top:20px"
+        >
+
+
+        <audio
+            id="player"
+            controls
+            style="
+                width:100%;
+                margin-top:20px;
+            "
+        >
+        </audio>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL SURPRISE
+========================= -->
+
+<section class="final">
+
+
+    <h2>
+        One Last Surprise 💖
+    </h2>
+
+
+    <p>
+
+        You deserve a day full
+        of happiness,
+        laughter, cake
+        and beautiful memories. 🥰
+
+    </p>
+
+
+    <button
+        class="secondary"
+        onclick="showSecret()"
+        style="margin-top:22px"
+    >
+
+        Open My Secret Message 💌
+
+    </button>
+
+
+
+    <div
+        id="secret"
+        class="hidden"
+    >
+
+        <p>
+
+            <b>
+                Dear Nupur,
+            </b>
+
+        </p>
+
+
+        <p>
+
+            Happy Birthday! 🎂❤️
+
+            Thank you for being such
+            an important part of my life.
+
+            I hope this year brings you
+            countless reasons to smile,
+            beautiful opportunities,
+            unforgettable memories,
+            and all the happiness
+            you deserve.
+
+        </p>
+
+
+        <p style="margin-top:12px">
+
+            Keep smiling,
+            keep shining,
+            and always stay amazing. ✨
+
+        </p>
+
+
+        <p style="margin-top:12px">
+
+            Lots of love! 🫶❤️
+
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    Made with ❤️ especially for Nupur
+    • Happy Birthday! 🎂
+
+</footer>
+
+
+
+<script>
+
+
+/* =========================
+   OPEN SURPRISE
+========================= */
+
+function startSurprise() {
+
+    document
+        .getElementById("surprise")
+        .classList
+        .remove("hidden");
+
+
+    document
+        .getElementById("surprise")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+
+    burstHearts();
+
+}
+
+
+
+/* =========================
+   CUT CAKE
+========================= */
+
+function cutCake() {
+
+    document
+        .getElementById("cake")
+        .classList
+        .add("cut");
+
+
+    document
+        .getElementById("cakeText")
+        .innerHTML =
+        "🎉 Cake cut! May your wish come true! 💖";
+
+
+    burstHearts();
+
+}
+
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function showSecret() {
+
+    document
+        .getElementById("secret")
+        .classList
+        .remove("hidden");
+
+
+    burstHearts();
+
+}
+
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+function burstHearts() {
+
+
+    for (
+        let i = 0;
+        i < 18;
+        i++
+    ) {
+
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "heart";
+
+
+        const emojis = [
+
+            "❤️",
+            "💖",
+            "💕",
+            "✨",
+            "🌸",
+            "💗"
+
+        ];
+
+
+        heart.textContent =
+            emojis[
+                Math.floor(
+                    Math.random()
+                    * emojis.length
+                )
+            ];
+
+
+        heart.style.left =
+            (
+                10 +
+                Math.random() * 80
+            ) + "vw";
+
+
+        heart.style.top =
+            (
+                55 +
+                Math.random() * 30
+            ) + "vh";
+
+
+        heart.style.fontSize =
+            (
+                18 +
+                Math.random() * 25
+            ) + "px";
+
+
+        document
+            .body
+            .appendChild(heart);
+
+
+        setTimeout(
+            () => heart.remove(),
+            2500
+        );
+
+    }
+
+}
+
+
+
+/* =========================
+   ADD PHOTOS
+========================= */
+
+function loadPhoto(input, id) {
+
+
+    const file =
+        input.files[0];
+
+
+    if (!file)
+        return;
+
+
+    const reader =
+        new FileReader();
+
+
+    reader.onload =
+        function(e) {
+
+
+            const box =
+                document
+                .getElementById(id);
+
+
+            box.innerHTML =
+
+                '<img src="' +
+                e.target.result +
+                '" alt="Birthday memory">';
+
+        };
+
+
+    reader.readAsDataURL(file);
+
+}
+
+
+
+/* =========================
+   ADD MUSIC
+========================= */
+
+document
+    .getElementById("music")
+    .addEventListener(
+        "change",
+        function() {
+
+
+            if (this.files[0]) {
+
+
+                document
+                    .getElementById("player")
+                    .src =
+                    URL.createObjectURL(
+                        this.files[0]
+                    );
+
+            }
+
+        }
+    );
+
+
+</script>
+
+</body>
+</html>
+```
